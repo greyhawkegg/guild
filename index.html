@@ -575,7 +575,37 @@ a, a:hidden, a:visited, a:hover, a:active {
 		<div class="eventDate">Saturday, September 19th</div>
 		<div class="eventLocation">Davis-McCann Center • Murphysboro, Illinois</div>
 		<p>Coming back for a second year with even more!</p>
-		<h3 class="eventDate"><a href="/guild/greyhawkecon.html" class="eventDate">CLICK HERE TO SEE FULL EVENT DETAILS</a></h3>
+<h3 class="eventCTA">
+    <a href="/guild/greyhawkecon.html">
+        ► View the Full Greyhawke Game Con Schedule
+    </a>
+</h3>
+	.eventCTA{
+    text-align:center;
+    margin:32px 0;
+}
+
+.eventCTA a{
+    display:inline-block;
+    padding:16px 34px;
+    background:#d6a437;
+    color:#111;
+    font-size:1.8rem;
+    font-weight:700;
+    border-radius:10px;
+    text-decoration:none;
+    border:2px solid #ffd76b;
+    transition:.2s;
+    box-shadow:0 0 18px rgba(255,215,90,.45);
+}
+
+.eventCTA a:hover{
+    background:#f0c14b;
+    transform:translateY(-2px);
+    box-shadow:0 0 28px rgba(255,215,90,.75);
+}
+
+	
 		<div class="eventFeatures">
 			<div class="feature">Tournaments</div>
 			<div class="feature">Door Prizes</div>
