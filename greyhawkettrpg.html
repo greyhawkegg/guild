@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TTRPG Sessions | Greyhawke Game Con</title>
+<meta name="description" content="Tabletop roleplaying sessions at Greyhawke Game Con.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+ background:#111 url("images/background.jpg") fixed;
+ background-size:cover;color:#e6e2d3;
+ font-family:Verdana,Geneva,sans-serif;line-height:1.6;
+}
+a{color:#d7b45b;text-decoration:none}
+a:hover{color:#fff}
+.wrapper{width:94%;max-width:1250px;margin:auto}
+.hero{
+ border-bottom:5px solid #967330;
+ background:linear-gradient(rgba(0,0,0,.78),rgba(0,0,0,.88));
+}
+.hero-content{text-align:center;padding:42px 20px 35px}
+.hero h1{
+ font-size:clamp(30px,5vw,52px);color:#fff;letter-spacing:4px;
+ text-shadow:0 0 15px #000,0 0 35px #000;
+}
+.hero h2{margin-top:12px;color:#d6ba6f;font-size:clamp(19px,3vw,27px)}
+.intro{padding:38px 0 25px;text-align:center}
+.intro p{max-width:850px;margin:0 auto;font-size:18px;color:#ddd}
+.schedule{
+ display:grid;grid-template-columns:repeat(2,1fr);gap:24px;
+ margin:25px 0 42px;
+}
+.slot{
+ background:linear-gradient(145deg,#292929,#181818);
+ border:2px solid #8b6d31;border-radius:15px;padding:25px;
+ text-align:center;box-shadow:0 8px 25px rgba(0,0,0,.5);
+}
+.slot .time{font-size:25px;font-weight:bold;color:#ffd775}
+.slot .label{
+ display:inline-block;margin-top:8px;padding:5px 14px;border-radius:20px;
+ background:#7b1123;color:#ffd978;font-weight:bold;letter-spacing:1px
+}
+.session-grid{display:grid;gap:24px;padding-bottom:60px}
+.session{
+ background:linear-gradient(180deg,rgba(58,58,58,.97),rgba(29,29,29,.97));
+ border:2px solid #7f6730;border-radius:14px;overflow:hidden;
+ box-shadow:0 8px 20px rgba(0,0,0,.5);
+ transition:.25s;
+}
+.session:hover{transform:translateY(-4px);border-color:#d9be72;box-shadow:0 15px 30px rgba(0,0,0,.65)}
+.session-head{
+ padding:18px 22px;background:linear-gradient(90deg,#3d301b,#242424);
+ border-bottom:1px solid #7f6730;
+}
+.session-title{font-size:25px;color:#f2d98b;margin-bottom:10px}
+.meta{display:flex;flex-wrap:wrap;gap:9px}
+.badge{
+ padding:6px 12px;border-radius:18px;background:#151515;
+ border:1px solid #8e7137;color:#e7d19a;font-size:14px;font-weight:bold;
+}
+.badge.system{background:#7b1123;color:#ffd978;border-color:#b8944a}
+.session-body{padding:22px}
+.session-body p{font-size:17px;color:#ddd;margin-bottom:13px}
+.gm{color:#c8a35b;font-weight:bold}
+.slot-break{margin:10px 0 0}
+
+.slot-link{cursor:pointer}
+.slot-link:hover{border-color:#d9be72;transform:translateY(-4px);box-shadow:0 15px 30px rgba(0,0,0,.65)}
+.slot-link:focus{outline:2px solid #ffd775;outline-offset:3px}
+.session-divider{display:flex;align-items:center;justify-content:center;gap:18px;margin:18px 0 6px;padding:16px 12px;color:#ffd775;text-align:center}
+.session-divider::before,.session-divider::after{content:"";height:2px;flex:1;background:linear-gradient(90deg,transparent,#8b6d31)}
+.session-divider::after{background:linear-gradient(90deg,#8b6d31,transparent)}
+.session-divider span{display:inline-block;padding:6px 14px;border-radius:20px;background:#7b1123;color:#ffd978;font-weight:bold;letter-spacing:2px}
+.session-divider strong{font-size:22px;color:#f2d98b;white-space:nowrap}
+.session2-divider{scroll-margin-top:20px}
+@media(max-width:750px){
+ .schedule{grid-template-columns:1fr}
+ .hero-content{padding-top:30px}
+ .session-title{font-size:21px}
+  .session-divider{gap:9px}
+  .session-divider strong{font-size:17px}
+ .session-body p{font-size:16px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+ <div class="hero-content">
+  <h1>GREYHAWKE GAME CON</h1>
+  <h2>Tabletop Roleplaying Sessions</h2>
+ </div>
+</header>
+
+<main class="wrapper">
+ <section class="intro">
+  <p>Choose your adventure! All sessions are first come first served.</p>
+ </section>
+
+ <section class="schedule" aria-label="Session schedule">
+  <div class="slot">
+   <div class="time">12:00 – 4:00 PM</div>
+   <div class="label">SESSION 1</div>
+  </div>
+  <a href="#session2">
+  <div class="slot">
+   <div class="time">4:15 – 8:15 PM</div>
+   <div class="label">SESSION 2</div>
+  </div>
+  </a>
+ </section>
+
+ <section class="session-grid">
+
+  <div class="session-divider"><span>SESSION 1</span><strong>12:00 – 4:00 PM</strong></div>
+
+
+  <article class="session">
+   <div class="session-head">
+    <div class="session-title">Devil's Due</div>
+    <div class="meta">
+     <span class="badge system">Pirate Borg, the Worst Pirate RPG Ever Made!</span>
+     <span class="badge">SESSION 1 • 12:00–4:00 PM</span>
+     <span class="badge">Up to 6 Scallywags, Reprobates, or Luckless Landlubbers.</span>
+    </div>
+   </div>
+   <div class="session-body">
+    <p class="gm">Unnamed — Table X</p>
+    <p>Pirate Borg is a rules light game with an older edition D&D feel, custom built to facilitate scurvy-ridden rum-soaked pirate adventures in a dark and twisted version of the Caribbean. Life is cheap, (un)death is prevalent, and new characters roll up rather quickly! Join me for a four hour sandbox session where you'll get to choose your own misadventure as you try to survive the debt you owe to an infamous pirate captain.
+	<br><br>
+	After nearly dying on your last voyage, you were saved by the infamous pirate captain Fredrick “Sea Devil” Black. The captain then unceremoniously dumped you onto the docks of an unfamiliar port. Nothing in the Dark Caribbean is free, and you instinctively know that Black will be back with high expectations. You have the four hours of our session to fix your situation. Go treasure hunting in hopes of paying off your debt, steal a ship and make a run for it, find a defensible location and dig in your heels for a fight. Do whatever you can, as fast as you can, as you've only got four hours, and this Devil always gets his due.
+</p>
+   </div>
+  </article>
+
+
+  <article class="session">
+   <div class="session-head">
+    <div class="session-title">Beyond Hogwarts</div>
+    <div class="meta">
+     <span class="badge system">FAST RPG</span>
+     <span class="badge">SESSION 1 • 12:00–4:00 PM</span>
+     <span class="badge">6 PLAYERS</span>
+    </div>
+   </div>
+   <div class="session-body">
+    <p class="gm">Woody Babb — Table 2</p>
+    <p>Congratulations, you and your classmates have just graduated from the Hogwarts School of Witchcraft and Wizardry! It’s 1888 during the height of Victorian England’s glorious Steampunk era. Recently, a gateway into a long-lost arcane realm has been discovered and Hogwarts has been entrusted to research and explore this dark domain. An elite group of alumni have been selected to do their post-graduate work here for a semester. Under the supervision of Prof. Ambrose Thorncroft, you will study strange flora and fauna, visit enchanted sites, encounter supernatural creatures, and face vile threats that could endanger the Muggles as well as the Wizarding World.</p>
+   </div>
+  </article>
+
+  <article class="session">
+   <div class="session-head">
+    <div class="session-title">Scooby Doo: Things That Woe Bump in the Night</div>
+    <div class="meta">
+     <span class="badge system">FAST RPG</span>
+     <span class="badge">SESSION 1 • 12:00–4:00 PM</span>
+     <span class="badge">6 PLAYERS</span>
+    </div>
+   </div>
+   <div class="session-body">
+    <p class="gm">Larry Babb — Table 3</p>
+    <p>Scooby and the gang visit Jericho, Vermont and it doesn’t take long before they get the feeling that something sinister is going on at Nevermore Academy. It’s time to split up and look for clues! Join Mystery, Inc. and special guest star Wednesday Addams for this Lovecraftian twist on the classic Saturday morning cartoon.</p>
+   </div>
+  </article>
+
+  <article class="session">
+   <div class="session-head">
+    <div class="session-title">Everybody Dies at Midnight</div>
+    <div class="meta">
+     <span class="badge system">DRAGONBANE</span>
+     <span class="badge">SESSION 1 • 12:00–4:00 PM</span>
+     <span class="badge">UP TO 6 PLAYERS</span>
+    </div>
+   </div>
+   <div class="session-body">
+    <p class="gm">Bruce McCarthy — Table 5</p>
+    <p><strong>Level/Requirements:</strong> No level requirement</p>
+    <p><strong>Experience Required:</strong> None, completely beginner-friendly. I’ll teach the rules at the table.</p>
+    <p>You may use the Dragonbane character creation site to create characters quickly and jump right into the adventure: <a href="https://sweet-chimera-d897ef.netlify.app" target="_blank">Dragonbane Character Creation Site</a></p>
+    <p><strong>Adventure Synopsis:</strong><br>
+    Welcome to Lastwick, where tonight is the biggest celebration of the year.<br>
+    The beer is free. The music is loud. The entire village is celebrating.<br>
+    Because at midnight, everybody dies.<br>
+    It has happened every year for 117 years. When the clock strikes twelve, every man, woman, and child in Lastwick drops dead—and when the sun rises, they wake up perfectly fine.<br>
+    At least, that's what's supposed to happen.<br>
+    This year, the clock strikes twelve and the villagers fall dead... but the adventurers don't.<br>
+    Then the graves begin to open.<br>
+    With dawn approaching and Lastwick's dead refusing to stay buried, the heroes must descend beneath the village, uncover the secret of the Last Night, and destroy the ancient evil that has been waiting 117 years for its chance to escape.<br>
+    Tonight, everybody dies. The question is whether they'll wake up.</p>
+   </div>
+  </article>
+
+
+
+
+
+  <div class="session-divider session2-divider" id="session2"><span>SESSION 2</span><strong>4:15 – 8:15 PM</strong></div>
+
+
+  <article class="session">
+   <div class="session-head">
+    <div class="session-title">Souls for the Taking</div>
+    <div class="meta">
+     <span class="badge system">RISING LEGENDS</span>
+     <span class="badge">SESSION 2 • 4:15–8:15 PM</span>
+     <span class="badge">6 PLAYERS</span>
+    </div>
+   </div>
+   <div class="session-body">
+    <p class="gm">Yitzi Santer — Table X</p>
+    <p>Delve into a deep and unique fantasy world to explore and fight for survival.</p>
+    <p>This all d12 tabletop roleplaying game focuses on heavy character customization and teamwork. Rising Legends allows you to watch your character leave their mark on history.</p>
+	<p>You may build your character online at <a target="_GDG" href="https://GrinningDemonGames.com">GrinningDemonGames.com</a> or we offer prebuilt characters.
+   </div>
+  </article>
+
+  <article class="session">
+   <div class="session-head">
+    <div class="session-title">Call of Clue-thulhu</div>
+    <div class="meta">
+     <span class="badge system">FAST RPG</span>
+     <span class="badge">SESSION 2 • 4:15–8:15 PM</span>
+     <span class="badge">6 PLAYERS</span>
+    </div>
+   </div>
+   <div class="session-body">
+    <p class="gm">Woody Babb — Table 2</p>
+    <p>On a stormy night, ten strangers arrive at a dark, foreboding mansion. Each has come for a purpose, but not everyone will see the dawn. Take the role of Colonel Mustard, Miss Scarlet, or one of the other characters from the classic board game in this Victorian tale with a Lovecraftian twist. It’s a suspense-filled whatdunit that you won’t soon forget!</p>
+   </div>
+  </article>
+
+  <article class="session">
+   <div class="session-head">
+    <div class="session-title">Fallout</div>
+    <div class="meta">
+     <span class="badge system">FAST RPG</span>
+     <span class="badge">SESSION 2 • 4:15–8:15 PM</span>
+     <span class="badge">6 PLAYERS</span>
+    </div>
+   </div>
+   <div class="session-body">
+    <p class="gm">Larry Babb — Table 3</p>
+    <p>Welcome to the retro-futuristic world of Fallout! Explore the radioactive wasteland of post-apocalyptic America and scavenge through ruined cities to get the resources you need. Take the role of Vault Dweller, Survivor, Ghoul, Brotherhood Initiate, Super-Mutant, or Mister Handy Robot and band together to avoid Feral Raiders and Mutated Creatures. With your laser gun in one hand and a cool, refreshing Nuka-Cola in the other, there's nothing you can't handle!</p>
+   </div>
+  </article>
+
+
+  <article class="session">
+   <div class="session-head">
+    <div class="session-title">Van Richton’s Guide to Ravenloft: in Valachan the Domain of the Hunter</div>
+    <div class="meta">
+     <span class="badge system">DND 5E</span>
+     <span class="badge">SESSION 2 • 4:15–8:15 PM</span>
+     <span class="badge">6 PLAYERS</span>
+    </div>
+   </div>
+   <div class="session-body">
+    <p class="gm">Tyler Stacy — Table 4</p>
+    <p>A rag tag group of six individuals are pulled from their world to participate in a hunt. As the Prey. In order for this world to survive, blood must be spilled in a ceremonial hunt to appease the hunger of the land. A jungle filled with danger and beauty. 
+	<br><br>
+	It is a race against the clock, the predators, the other teams, and of course the cold and shadowy hunter. Two possible finish lines. Secrets that could destroy everything. 
+	<br><br>
+	Death awaits all who fail or refuse to run, the only way to live is to play and win this deadly game of cat and mouse.
+	<br><br>
+	Premade level 6 5th edition character sheets from the D&D website will be used for this game.
+	</p>
+   </div>
+  </article>
+
+
+
+  </section>
+</main>
+</body>
+</html>
